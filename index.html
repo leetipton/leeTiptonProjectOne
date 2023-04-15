@@ -15,35 +15,36 @@
 
 <body>
     <header>
-        <div class="wrapper" id="topHeader">
-            <div>
-                <p>Hello Everyone! 25% Off All Products</p>
-            </div>
-            <div>
-                <p>CAD</p>
-                <p>English</p>
-            </div>
-        </div>
-        <div class="wrapper" id="bottomHeader">
-            <div class="imageContainer">
-                <img src="./assets/logo.png" alt="Pronia logo">
-            </div>
-        </div>
-        <nav>
+        <div id="topHeader">
             <div class="wrapper">
-                <ul>
-                    <li>Home</li>
-                    <li>Blog</li>
-                    <li>Contact Us</li>
-                </ul>
+                <div>
+                    <p>Hello Everyone! 25% Off All Products</p>
+                </div>
+                <div>
+                    <p>CAD English</p>
+                </div>
             </div>
-        </nav>
-        <div>
-            <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+        <div id="bottomHeader">
+            <div class="wrapper">
+                <div class="imageContainer">
+                    <img src="./assets/logo.png" alt="Pronia logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>Blog</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </nav>
+                <div>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+            </div>
         </div>
     </header>
     <section id="plantOffer">
-        <div id="wrapper">
+        <div class="wrapper">
             <div id="textContainer">
                 <h2>65% Off</h2>
                 <h1>New Plant</h1>
@@ -87,105 +88,206 @@
         </div>
     </section>
     <section id="ourProducts">
-        <div class="wrapper">
-            <h5>Our Products</h5>
+            <div class="wrapper">
+                <h5 class="ourProductsRule">———</h5><h5 id="ourProductsTitle">Our Products</h5><h5 class="ourProductsRule">———</h5>
+            </div>
             <div>
-                <div>
-                    <p>Featured</p>
+                <div id="gallerySelectButtons" class="wrapper">
+                    <button>Featured</button>
+                    <button>Bestseller</button>
+                    <button>Latest</button>
                 </div>
-                <div>
-                    <p>Bestseller</p>
-                </div>
-                <div>
-                    <p>Latest</p>
-                </div>
-            </div>
-            <div class="plantList">
-                <div class="plantUnit">
-                    <div class="imageContainer">
-                        <img src="./assets/p2.jpeg" alt="american marigold potted plant">
+                <div class="wrapper" id="plantList">
+                    <div class="plantUnit">
+                        <div class="imageContainer">
+                            <img src="./assets/p2.jpeg" alt="american marigold potted plant">
+                        </div>
+                        <div class="textContainer">
+                            <button><i class="fa-solid fa-cart-shopping"></i></button>
+                            <p>American Marigold</p>
+                            <p class="price">$23.45</p>
+                        </div>
                     </div>
-                    <div class="textContainer">
-                        <button><i class="fa-solid fa-cart-shopping"></i></button>
-                        <p>American Marigold</p>
-                        <p class="price">$23.45</p>
+                    <div class="plantUnit">
+                        <div class="imageContainer">
+                            <img src="./assets/p1.jpeg" alt="black eyed susan potted plant">
+                        </div>
+                        <div class="textContainer">
+                            <button><i class="fa-solid fa-cart-shopping"></i></button>
+                            <p>Black Eyed Susan</p>
+                            <p class="price">$25.45</p>
+                        </div>
                     </div>
-                </div>
-                <div class="plantUnit">
-                    <div class="imageContainer">
-                        <img src="./assets/p1.jpeg" alt="black eyed susan potted plant">
+                    <div class="plantUnit">
+                        <div class="imageContainer">
+                            <img src="./assets/p3.jpeg" alt="bleeding heart cactus potted plant">
+                        </div>
+                        <div class="textContainer">
+                            <button><i class="fa-solid fa-cart-shopping"></i></button>
+                            <p>Bleeding Heart</p>
+                            <p class="price">$30.45</p>
+                        </div>
                     </div>
-                    <div class="textContainer">
-                        <button><i class="fa-solid fa-cart-shopping"></i></button>
-                        <p>Black Eyed Susan</p>
-                        <p class="price">$25.45</p>
+                    <div class="plantUnit">
+                        <div class="imageContainer">
+                            <img src="./assets/p4.jpeg" alt="bloody cranesbill potted plant">
+                        </div>
+                        <div class="textContainer">
+                            <button><i class="fa-solid fa-cart-shopping"></i></button>
+                            <p>Bloody Cranesbill</p>
+                            <p class="price">$45.00</p>
+                        </div>
                     </div>
-                </div>
-                <div class="plantUnit">
-                    <div class="imageContainer">
-                        <img src="./assets/p3.jpeg" alt="bleeding heart cactus potted plant">
+                    <div class="plantUnit">
+                        <div class="imageContainer">
+                            <img src="./assets/p5.jpeg" alt="butterfly weed potted plant">
+                        </div>
+                        <div class="textContainer">
+                            <button><i class="fa-solid fa-cart-shopping"></i></button>
+                            <p>Butterfly Weed</p>
+                            <p class="price">$50.45</p>
+                        </div>
                     </div>
-                    <div class="textContainer">
-                        <button><i class="fa-solid fa-cart-shopping"></i></button>
-                        <p>Bleeding Heart</p>
-                        <p class="price">$30.45</p>
+                    <div class="plantUnit">
+                        <div class="imageContainer">
+                            <img src="./assets/p6.jpeg" alt="common yarrow potted plant">
+                        </div>
+                        <div class="textContainer">
+                            <button><i class="fa-solid fa-cart-shopping"></i></button>
+                            <p>Common Yarrow</p>
+                            <p class="price">$65.00</p>
+                        </div>
                     </div>
-                </div>
-                <div class="plantUnit">
-                    <div class="imageContainer">
-                        <img src="./assets/p4.jpeg" alt="bloody cranesbill potted plant">
+                    <div class="plantUnit">
+                        <div class="imageContainer">
+                            <img src="./assets/p7.jpeg" alt="doublefile viburnum potted plant">
+                        </div>
+                        <div class="textContainer">
+                            <button><i class="fa-solid fa-cart-shopping"></i></button>
+                            <p>American Marigold</p>
+                            <p class="price">$23.45</p>
+                        </div>
                     </div>
-                    <div class="textContainer">
-                        <button><i class="fa-solid fa-cart-shopping"></i></button>
-                        <p>Bloody Cranesbill</p>
-                        <p class="price">$45.00</p>
-                    </div>
-                </div>
-                <div class="plantUnit">
-                    <div class="imageContainer">
-                        <img src="./assets/p5.jpeg" alt="butterfly weed potted plant">
-                    </div>
-                    <div class="textContainer">
-                        <button><i class="fa-solid fa-cart-shopping"></i></button>
-                        <p>Butterfly Weed</p>
-                        <p class="price">$50.45</p>
-                    </div>
-                </div>
-                <div class="plantUnit">
-                    <div class="imageContainer">
-                        <img src="./assets/p6.jpeg" alt="common yarrow potted plant">
-                    </div>
-                    <div class="textContainer">
-                        <button><i class="fa-solid fa-cart-shopping"></i></button>
-                        <p>Common Yarrow</p>
-                        <p class="price">$65.00</p>
-                    </div>
-                </div>
-                <div class="plantUnit">
-                    <div class="imageContainer">
-                        <img src="./assets/p7.jpeg" alt="doublefile viburnum potted plant">
-                    </div>
-                    <div class="textContainer">
-                        <button><i class="fa-solid fa-cart-shopping"></i></button>
-                        <p>American Marigold</p>
-                        <p class="price">$23.45</p>
-                    </div>
-                </div>
-                <div class="plantUnit">
-                    <div class="imageContainer">
-                        <img src="./assets/p2.jpeg" alt="american marigold potted plant">
-                    </div>
-                    <div class="textContainer">
-                        <button><i class="fa-solid fa-cart-shopping"></i></button>
-                        <p>American Marigold</p>
-                        <p class="price">$23.45</p>
+                    <div class="plantUnit">
+                        <div class="imageContainer">
+                            <img src="./assets/p2.jpeg" alt="american marigold potted plant">
+                        </div>
+                        <div class="textContainer">
+                            <button><i class="fa-solid fa-cart-shopping"></i></button>
+                            <p>American Marigold</p>
+                            <p class="price">$23.45</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
+    </section>
+    <section id="collections">
+        <div class="wrapper">
+            <div class="collectionItemLarge">
+                <p>Collection Of Cactus</p>
+                <h3>Pottery Pots & Plant</h3>
+                <button>Shop Now</button>
+            </div>
+            <div class="collectionItemSmall">
+                <p>New Collection</p>
+                <h3>Plant Port</h3>
+                <button>Shop Now</button>
+            </div>
+            <div class="collectionItemSmall">
+                <p>New Collection</p>
+                <h3>Plant Port</h3>
+                <button>Shop Now</button>
+            </div>
+            <div class="collectionItemLarge">
+                <p>Collection Of Cactus</p>
+                <h3>Hanging Pots & Plant</h3>
+                <button>Shop Now</button>
+            </div>
         </div>
     </section>
+    <section id="posts">
+        <div class="wrapper">
+            <div>
+                <h5>Latest Posts</h5>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical Latin literature</p>
+            </div>
+            <article>
+                <p>By: Admin 24 April 2021 </p>
+                <h6>Maecenas Laoreet Massa</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quibusdam omnis est eveniet enim,
+                    facere eos pariatur. Eaque, dolorum.</p>
+                <img src="./assets/blog2.jpeg" alt="sitting person adding soil to potted plant with trowel">
+            </article>
+            <article>
+                <p>By: Admin 24 April 2021 </p>
+                <h6>Maecenas Laoreet Massa</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quibusdam omnis est eveniet enim,
+                    facere eos pariatur. Eaque, dolorum.</p>
+                <img src="./assets/blog3.jpeg" alt="person holding tray of potted plants">
+            </article>
+            <article>
+                <p>By: Admin 24 April 2021 </p>
+                <h6>Maecenas Laoreet Massa</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quibusdam omnis est eveniet enim,
+                    facere eos pariatur. Eaque, dolorum.</p>
+                <img src="./assets/blog1.jpeg" alt="succulent in pot">
+            </article>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            <div class="footerBit">
+                <img src="logo.png" alt="Pronia logo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptate adipisci autem accusamus
+                    beatae tempora exercitationem, corrupti cumque?</p>
+                <div id="footerButtons">
+                    <button><i class="fa-brands fa-facebook-f"></i></button>
+                    <button><i class="fa-brands fa-twitter"></i></button>
+                    <button><i class="fa-brands fa-pinterest"></i></button>
+                    <button><i class="fa-brands fa-dribbble"></i></button>
+                </div>
+            </div>
+            <div class="footerBit">
+                <p>Useful Links</p>
+                <ul>
+                    <li>About Pronia</li>
+                    <li>How to shop</li>
+                    <li>FAQ</li>
+                    <li>Contact us</li>
+                    <li>Log in</li>
+                </ul>
+            </div>
+            <div class="footerBit">
+                <p>My Account</p>
+                <ul>
+                    <li>Sign In</li>
+                    <li>View Cart</li>
+                    <li>My Wishlist</li>
+                    <li>Track My Order</li>
+                    <li>Help</li>
+                </ul>
+            </div>
+            <div class="footerBit">
+                <p>Our Service</p>
+                <ul>
+                    <li>Payment Methods</li>
+                    <li>Customer Service</li>
+                    <li>Returns</li>
+                    <li>Shipping</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="footerBit">
+                <p>Got Questions? Call Us</p>
+                <p>123 456 789</p>
+                <p>Your Address Goes Here</p>
+            </div>
+        </div>
+        <div>
+            <p>© 2023 Pronia</p>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -257,3 +257,186 @@ template {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* Generic Use HTML */
+html {
+  font-family: "Rubik", sans-serif;
+  font-size: 62.5%;
+}
+
+body,
+p {
+  font-size: 1.8rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  color: #fff;
+  background-color: #abd373;
+  font: inherit;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border: none;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 25px;
+}
+
+.wrapper {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* HEADER STYLING */
+header {
+  text-transform: uppercase;
+}
+header .wrapper {
+  justify-content: space-between;
+  align-items: center;
+}
+header #topHeader {
+  padding: 5px;
+  color: #fff;
+  background-color: #abd373;
+}
+header #topHeader p {
+  font-size: 1.25rem;
+  margin: 15px 0;
+}
+header #bottomHeader {
+  padding: 15px 5px;
+}
+header #bottomHeader li {
+  font-size: 1.25rem;
+  float: left;
+  padding: 0 20px;
+}
+header #bottomHeader i {
+  font-size: 2rem;
+  padding: 15px 0 0 95px;
+}
+
+/* PLANT OFFER SECTION */
+#plantOffer {
+  background-color: #F8EEE5;
+}
+#plantOffer .wrapper {
+  justify-content: left;
+  align-items: center;
+}
+#plantOffer h1 {
+  font-size: 7rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+#plantOffer h2 {
+  font-size: 4.5rem;
+  font-weight: 300;
+  margin: 0;
+}
+#plantOffer p {
+  margin: 10px 0;
+}
+#plantOffer img {
+  padding: 0 0 0 50px;
+}
+
+/* THREE-ICON BAR */
+#iconBar {
+  padding: 50px 0;
+}
+#iconBar .wrapper {
+  justify-content: space-around;
+  align-items: center;
+}
+#iconBar .iconBox {
+  display: flex;
+  align-items: center;
+  border: 2px dashed #abd373;
+  padding: 15px;
+}
+#iconBar .iconBox .imageContainer {
+  padding: 0 15px 0 0;
+}
+#iconBar .iconBox .imageContainer i {
+  font-size: 2.5rem;
+  color: #abd373;
+}
+#iconBar .iconBox h6 {
+  font-size: 1.5rem;
+  margin: 0 0 5px 0;
+}
+#iconBar .iconBox p {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+/* Our Products title and buttons */
+#ourProducts h5 {
+  font-size: 3rem;
+  margin: 20px;
+}
+#ourProducts .ourProductsRule {
+  color: #abd373;
+  letter-spacing: -4px;
+}
+#ourProducts .wrapper {
+  justify-content: center;
+}
+#ourProducts #gallerySelectButtons button {
+  font-size: 1.25rem;
+  text-transform: none;
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #dee2e6;
+  border-radius: 0px;
+  padding: 10px;
+  margin: 10px;
+}
+#ourProducts #gallerySelectButtons button:hover {
+  color: #abd373;
+  border: 2px dotted #abd373;
+}
+
+/* Gallery of Items for Sale */
+#plantList {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#plantList .plantUnit {
+  width: 25%;
+}
+#plantList .plantUnit .imageContainer {
+  display: flex;
+  justify-content: center;
+}
+#plantList .plantUnit .textContainer button {
+  border-radius: 0;
+  color: #dee2e6;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0px 12px 15px 0px rgba(0, 0, 0, 0.3);
+  margin: 5px 0;
+}
+#plantList .plantUnit .textContainer button:hover {
+  color: #000;
+}
+#plantList .plantUnit .textContainer p {
+  margin: 10px 0;
+}
+#plantList .plantUnit .textContainer .price {
+  color: #abd373;
+}
