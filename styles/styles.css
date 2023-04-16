@@ -473,7 +473,7 @@ header #bottomHeader li {
   padding: 0;
 }
 #collections .collectionItem button {
-  padding: 10px 20px;
+  padding: 5px 20px;
 }
 #collections #collectionItemOne {
   align-items: flex-start;
