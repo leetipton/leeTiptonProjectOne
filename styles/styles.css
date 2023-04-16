@@ -323,14 +323,15 @@ header #topHeader p {
 header #bottomHeader {
   padding: 15px 5px;
 }
+header #bottomHeader object {
+  height: 20px;
+  width: 20px;
+  margin: 15px 0 0 95px;
+}
 header #bottomHeader li {
   float: left;
   padding: 0 20px;
   font-size: 1.25rem;
-}
-header #bottomHeader i {
-  font-size: 2rem;
-  padding: 15px 0 0 95px;
 }
 
 /* PLANT OFFER SECTION */
@@ -373,12 +374,11 @@ header #bottomHeader i {
   padding: 15px 20px 20px 20px;
 }
 #iconBar .iconBox .imageContainer {
-  padding: 0 15px 0 0;
+  padding: 10px 15px 0 0;
 }
-#iconBar .iconBox .imageContainer i {
-  font-size: 2.5rem;
-  color: #abd373;
-  padding: 10px 0 0 0;
+#iconBar .iconBox .imageContainer img {
+  height: 30px;
+  width: auto;
 }
 #iconBar .iconBox h6 {
   font-size: 1.5rem;
@@ -587,9 +587,10 @@ footer .footerBit button {
   padding: 0;
   margin: 5px;
 }
-footer .footerBit button i {
-  margin: 0;
-  padding: 0;
+footer .footerBit button object {
+  height: 12px;
+  width: auto;
+  margin: 5px 0 0 0;
 }
 footer #copyright {
   color: #abd373;

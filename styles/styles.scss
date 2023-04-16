@@ -15,7 +15,7 @@ html {
     font-size: 62.5%;
 }
 
-body, 
+body,
 p {
     font-size: 1.8rem;
     line-height: 3.6rem;
@@ -50,11 +50,11 @@ button {
     width: 100%;
 }
 
-        .sectionRule {
-            color: $colorOne;
-            letter-spacing: -4px;
-            text-align: center;
-        }
+.sectionRule {
+    color: $colorOne;
+    letter-spacing: -4px;
+    text-align: center;
+}
 
 /* HEADER STYLING */
 
@@ -79,16 +79,18 @@ header {
     #bottomHeader {
         padding: 15px 5px;
 
+        object {
+            height: 20px;
+            width: 20px;
+            margin: 15px 0 0 95px;
+        }
+
         li {
             float: left;
             padding: 0 20px;
             font-size: 1.25rem;
         }
 
-        i {
-            font-size: 2rem;
-            padding: 15px 0 0 95px;
-        }
     }
 }
 
@@ -141,13 +143,12 @@ header {
         padding: 15px 20px 20px 20px;
 
         .imageContainer {
-            padding: 0 15px 0 0;
-
-            i {
-                font-size: 2.5rem;
-                color: $colorOne;
-                padding: 10px 0 0 0;
+            padding: 10px 15px 0 0;
+            img {
+                height: 30px;
+                width: auto;
             }
+
         }
 
         h6 {
@@ -314,6 +315,7 @@ header {
 #posts {
 
     margin: 0 0 60px 0;
+
     .wrapper {
         justify-content: center;
     }
@@ -375,7 +377,7 @@ footer {
 
     background-image: url(../assets/footer.jpg);
     background-size: cover;
-    overflow:hidden;
+    overflow: hidden;
 
     .footerBit {
         display: flex;
@@ -416,10 +418,12 @@ footer {
             padding: 0;
             margin: 5px;
 
-            i {
-                margin: 0;
-                padding: 0;
+            object {
+                height: 12px;
+                width: auto;
+                margin: 5px 0 0 0;
             }
+
         }
 
     }
