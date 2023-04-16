@@ -15,9 +15,10 @@ html {
     font-size: 62.5%;
 }
 
-body,
+body, 
 p {
     font-size: 1.8rem;
+    line-height: 3.6rem;
 }
 
 img {
@@ -37,7 +38,7 @@ button {
     font-size: 1.5rem;
     text-transform: uppercase;
     border: none;
-    padding: 20px;
+    padding: 10px 20px;
     margin: 20px 0;
     border-radius: 25px;
 }
@@ -48,6 +49,12 @@ button {
     max-width: 1200px;
     width: 100%;
 }
+
+        .sectionRule {
+            color: $colorOne;
+            letter-spacing: -4px;
+            text-align: center;
+        }
 
 /* HEADER STYLING */
 
@@ -61,13 +68,11 @@ header {
     }
 
     #topHeader {
-        padding: 5px;
         color: $colorFive;
         background-color: $colorOne;
 
         p {
             font-size: 1.25rem;
-            margin: 15px 0;
         }
     }
 
@@ -75,9 +80,9 @@ header {
         padding: 15px 5px;
 
         li {
-            font-size: 1.25rem;
             float: left;
             padding: 0 20px;
+            font-size: 1.25rem;
         }
 
         i {
@@ -100,7 +105,7 @@ header {
     h1 {
         font-size: 7rem;
         text-transform: uppercase;
-        margin: 0;
+        margin: 20px 0 0 0;
     }
 
     h2 {
@@ -133,7 +138,7 @@ header {
         display: flex;
         align-items: center;
         border: 2px dashed $colorOne;
-        padding: 15px;
+        padding: 15px 20px 20px 20px;
 
         .imageContainer {
             padding: 0 15px 0 0;
@@ -141,17 +146,20 @@ header {
             i {
                 font-size: 2.5rem;
                 color: $colorOne;
+                padding: 10px 0 0 0;
             }
         }
 
         h6 {
             font-size: 1.5rem;
-            margin: 0 0 5px 0;
+            margin: 0;
         }
 
         p {
             font-size: 1.25rem;
             margin: 0;
+            line-height: 0.75rem;
+            padding: 0 0 5px 0;
         }
     }
 }
@@ -163,11 +171,6 @@ header {
     h5 {
         font-size: 3rem;
         margin: 20px;
-    }
-
-    .ourProductsRule {
-        color: $colorOne;
-        letter-spacing: -4px;
     }
 
     .wrapper {
@@ -182,7 +185,7 @@ header {
             background-color: $colorFive;
             border: 2px solid $colorFour;
             border-radius: 0px;
-            padding: 10px;
+            padding: 0 10px;
             margin: 10px;
 
         }
@@ -217,21 +220,214 @@ header {
                 background-color: $colorFive;
                 border: none;
                 box-shadow: 0px 12px 15px 0px rgba(0, 0, 0, 0.3);
-                margin: 5px 0;
+                margin: 5px 0 5px 10px;
             }
 
             button:hover {
                 color: $colorThree;
+
             }
 
             p {
-
-                margin: 10px 0;
+                line-height: 1rem;
             }
 
             .price {
                 color: $colorOne;
             }
         }
+    }
+}
+
+/* plant collections section */
+
+#collections {
+
+    margin: 50px 0;
+
+    .wrapper {
+        flex-wrap: wrap;
+    }
+
+    .collectionItem {
+        display: flex;
+        flex-direction: column;
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 300px;
+        padding: 0 50px;
+
+        .textContainer {
+            width: 40%;
+        }
+
+        p {
+            margin: 40px 0 10px 0;
+        }
+
+        h3 {
+            font-size: 3rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            padding: 10px 20px;
+        }
+    }
+
+    #collectionItemOne {
+        align-items: flex-start;
+        justify-content: center;
+        width: 64.5%;
+        margin: 0 1.5% 1.5% 0;
+        background-image: url(../assets/b1.jpeg);
+
+    }
+
+    #collectionItemTwo {
+        align-items: center;
+        width: 31.5%;
+        margin: 0 0 1.5% 1.5%;
+        background-image: url(../assets/b2.jpeg);
+    }
+
+    #collectionItemThree {
+        align-items: center;
+        width: 31.5%;
+        margin: 1.5% 1.5% 0 0;
+        background-image: url(../assets/b3.jpeg);
+    }
+
+    #collectionItemFour {
+        align-items: flex-start;
+        justify-content: center;
+        width: 64.5%;
+        margin: 1.5% 0 0 1.5%;
+        background-image: url(../assets/b4.jpeg);
+    }
+}
+
+/* section with articles */
+
+#posts {
+
+    margin: 0 0 60px 0;
+    .wrapper {
+        justify-content: center;
+    }
+
+    h5 {
+        font-size: 3rem;
+        margin: 20px;
+        text-transform: uppercase;
+    }
+
+    #postsSubtitle {
+        width: 30%;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    article {
+
+        background-color: $colorFour;
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        margin: 1.5%;
+
+        h4 {
+            font-size: 2.75rem;
+            margin: 0;
+        }
+
+        .articleAuthorAndDate {
+            color: $colorOne
+        }
+
+        p {
+            margin: 0;
+        }
+
+        img {
+            padding-top: 25px;
+        }
+
+    }
+
+    article:nth-child(1) {
+        margin-left: 0;
+    }
+
+    article:nth-child(3) {
+        margin-right: 0;
+    }
+
+}
+
+/* footer section */
+
+footer {
+
+    background-image: url(../assets/footer.jpg);
+    background-size: cover;
+    overflow:hidden;
+
+    .footerBit {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 20%;
+        padding: 15px;
+
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .footerHeader {
+            font-size: 2.0rem;
+            padding: 15px 0 0 0;
+        }
+
+        #phoneNumber {
+            font-size: 3rem;
+            margin: -20px 0 0 0;
+            padding: 0 0 10 0;
+
+        }
+
+        img {
+            margin: 0 0 15px 0;
+        }
+
+        button {
+            color: $colorThree;
+            background-color: transparent;
+            border: 1px solid $colorThree;
+            width: 35px;
+            height: 35px;
+            border-radius: 0;
+            padding: 0;
+            margin: 5px;
+
+            i {
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+    }
+
+    #copyright {
+        color: $colorOne;
+        text-align: center;
+        line-height: 0rem;
+        padding: 0;
     }
 }

@@ -267,6 +267,7 @@ html {
 body,
 p {
   font-size: 1.8rem;
+  line-height: 3.6rem;
 }
 
 img {
@@ -286,7 +287,7 @@ button {
   font-size: 1.5rem;
   text-transform: uppercase;
   border: none;
-  padding: 20px;
+  padding: 10px 20px;
   margin: 20px 0;
   border-radius: 25px;
 }
@@ -298,6 +299,12 @@ button {
   width: 100%;
 }
 
+.sectionRule {
+  color: #abd373;
+  letter-spacing: -4px;
+  text-align: center;
+}
+
 /* HEADER STYLING */
 header {
   text-transform: uppercase;
@@ -307,21 +314,19 @@ header .wrapper {
   align-items: center;
 }
 header #topHeader {
-  padding: 5px;
   color: #fff;
   background-color: #abd373;
 }
 header #topHeader p {
   font-size: 1.25rem;
-  margin: 15px 0;
 }
 header #bottomHeader {
   padding: 15px 5px;
 }
 header #bottomHeader li {
-  font-size: 1.25rem;
   float: left;
   padding: 0 20px;
+  font-size: 1.25rem;
 }
 header #bottomHeader i {
   font-size: 2rem;
@@ -339,7 +344,7 @@ header #bottomHeader i {
 #plantOffer h1 {
   font-size: 7rem;
   text-transform: uppercase;
-  margin: 0;
+  margin: 20px 0 0 0;
 }
 #plantOffer h2 {
   font-size: 4.5rem;
@@ -365,7 +370,7 @@ header #bottomHeader i {
   display: flex;
   align-items: center;
   border: 2px dashed #abd373;
-  padding: 15px;
+  padding: 15px 20px 20px 20px;
 }
 #iconBar .iconBox .imageContainer {
   padding: 0 15px 0 0;
@@ -373,24 +378,23 @@ header #bottomHeader i {
 #iconBar .iconBox .imageContainer i {
   font-size: 2.5rem;
   color: #abd373;
+  padding: 10px 0 0 0;
 }
 #iconBar .iconBox h6 {
   font-size: 1.5rem;
-  margin: 0 0 5px 0;
+  margin: 0;
 }
 #iconBar .iconBox p {
   font-size: 1.25rem;
   margin: 0;
+  line-height: 0.75rem;
+  padding: 0 0 5px 0;
 }
 
 /* Our Products title and buttons */
 #ourProducts h5 {
   font-size: 3rem;
   margin: 20px;
-}
-#ourProducts .ourProductsRule {
-  color: #abd373;
-  letter-spacing: -4px;
 }
 #ourProducts .wrapper {
   justify-content: center;
@@ -402,7 +406,7 @@ header #bottomHeader i {
   background-color: #fff;
   border: 2px solid #dee2e6;
   border-radius: 0px;
-  padding: 10px;
+  padding: 0 10px;
   margin: 10px;
 }
 #ourProducts #gallerySelectButtons button:hover {
@@ -429,14 +433,167 @@ header #bottomHeader i {
   background-color: #fff;
   border: none;
   box-shadow: 0px 12px 15px 0px rgba(0, 0, 0, 0.3);
-  margin: 5px 0;
+  margin: 5px 0 5px 10px;
 }
 #plantList .plantUnit .textContainer button:hover {
   color: #000;
 }
 #plantList .plantUnit .textContainer p {
-  margin: 10px 0;
+  line-height: 1rem;
 }
 #plantList .plantUnit .textContainer .price {
   color: #abd373;
+}
+
+/* plant collections section */
+#collections {
+  margin: 50px 0;
+}
+#collections .wrapper {
+  flex-wrap: wrap;
+}
+#collections .collectionItem {
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 300px;
+  padding: 0 50px;
+}
+#collections .collectionItem .textContainer {
+  width: 40%;
+}
+#collections .collectionItem p {
+  margin: 40px 0 10px 0;
+}
+#collections .collectionItem h3 {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+}
+#collections .collectionItem button {
+  padding: 10px 20px;
+}
+#collections #collectionItemOne {
+  align-items: flex-start;
+  justify-content: center;
+  width: 64.5%;
+  margin: 0 1.5% 1.5% 0;
+  background-image: url(../assets/b1.jpeg);
+}
+#collections #collectionItemTwo {
+  align-items: center;
+  width: 31.5%;
+  margin: 0 0 1.5% 1.5%;
+  background-image: url(../assets/b2.jpeg);
+}
+#collections #collectionItemThree {
+  align-items: center;
+  width: 31.5%;
+  margin: 1.5% 1.5% 0 0;
+  background-image: url(../assets/b3.jpeg);
+}
+#collections #collectionItemFour {
+  align-items: flex-start;
+  justify-content: center;
+  width: 64.5%;
+  margin: 1.5% 0 0 1.5%;
+  background-image: url(../assets/b4.jpeg);
+}
+
+/* section with articles */
+#posts {
+  margin: 0 0 60px 0;
+}
+#posts .wrapper {
+  justify-content: center;
+}
+#posts h5 {
+  font-size: 3rem;
+  margin: 20px;
+  text-transform: uppercase;
+}
+#posts #postsSubtitle {
+  width: 30%;
+}
+#posts #postsSubtitle p {
+  text-align: center;
+}
+#posts article {
+  background-color: #dee2e6;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  margin: 1.5%;
+}
+#posts article h4 {
+  font-size: 2.75rem;
+  margin: 0;
+}
+#posts article .articleAuthorAndDate {
+  color: #abd373;
+}
+#posts article p {
+  margin: 0;
+}
+#posts article img {
+  padding-top: 25px;
+}
+#posts article:nth-child(1) {
+  margin-left: 0;
+}
+#posts article:nth-child(3) {
+  margin-right: 0;
+}
+
+/* footer section */
+footer {
+  background-image: url(../assets/footer.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+footer .footerBit {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 20%;
+  padding: 15px;
+}
+footer .footerBit ul {
+  padding: 0;
+  margin: 0;
+}
+footer .footerBit .footerHeader {
+  font-size: 2rem;
+  padding: 15px 0 0 0;
+}
+footer .footerBit #phoneNumber {
+  font-size: 3rem;
+  margin: -20px 0 0 0;
+  padding: 0 0 10 0;
+}
+footer .footerBit img {
+  margin: 0 0 15px 0;
+}
+footer .footerBit button {
+  color: #000;
+  background-color: transparent;
+  border: 1px solid #000;
+  width: 35px;
+  height: 35px;
+  border-radius: 0;
+  padding: 0;
+  margin: 5px;
+}
+footer .footerBit button i {
+  margin: 0;
+  padding: 0;
+}
+footer #copyright {
+  color: #abd373;
+  text-align: center;
+  line-height: 0rem;
+  padding: 0;
 }
