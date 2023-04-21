@@ -270,6 +270,13 @@ p {
   line-height: 3.6rem;
 }
 
+h1 {
+  font-size: 7rem;
+  line-height: 6rem;
+  text-transform: uppercase;
+  margin: 20px 0 0 0;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -297,6 +304,8 @@ button {
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
+  height: auto;
+  min-height: 100%;
 }
 
 .sectionRule {
@@ -341,12 +350,6 @@ header #bottomHeader li {
 #plantOffer .wrapper {
   justify-content: left;
   align-items: center;
-}
-#plantOffer h1 {
-  font-size: 7rem;
-  line-height: 6rem;
-  text-transform: uppercase;
-  margin: 20px 0 0 0;
 }
 #plantOffer h2 {
   font-size: 4.5rem;
@@ -603,6 +606,71 @@ footer #copyright {
   padding: 0;
 }
 
+#contactTitle {
+  background-image: url(../assets/contact-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 388px;
+}
+#contactTitle .wrapper {
+  justify-content: center;
+  align-items: center;
+}
+#contactTitle h2 {
+  text-transform: uppercase;
+}
+
+#contactSection {
+  padding: 80px 0;
+}
+#contactSection .wrapper {
+  box-shadow: 0px 12px 15px 0px rgba(0, 0, 0, 0.3);
+}
+#contactSection #contactInfo {
+  background-image: url(../assets/contact.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  padding: 40px;
+  width: 33%;
+}
+#contactSection #contactInput {
+  width: 66%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#contactSection #contactInput form input,
+#contactSection #contactInput form textarea {
+  width: 45%;
+  color: #4c4c4c;
+  border: none;
+  border-bottom: 1px solid;
+  margin: 2%;
+}
+#contactSection #contactInput form input::-moz-placeholder, #contactSection #contactInput form textarea::-moz-placeholder {
+  font-style: italic;
+}
+#contactSection #contactInput form input::placeholder,
+#contactSection #contactInput form textarea::placeholder {
+  font-style: italic;
+}
+#contactSection #contactInput form textarea {
+  width: 95%;
+  height: 80px;
+  resize: vertical;
+}
+#contactSection #contactInput form div {
+  display: flex;
+  justify-content: right;
+  margin: 2%;
+}
+#contactSection #contactInput form div button {
+  border-radius: 10px;
+}
+
 @media (max-width: 762px) {
   #bottomHeader .wrapper {
     flex-direction: column;
@@ -645,8 +713,28 @@ footer #copyright {
   footer .footerBit:nth-child(1) {
     min-width: 100%;
   }
+  #contactSection .wrapper {
+    flex-direction: column;
+  }
+  #contactSection .wrapper #contactInfo,
+  #contactSection .wrapper #contactInput {
+    width: 100%;
+    background-size: cover;
+  }
+  #contactSection .wrapper #contactInfo form,
+  #contactSection .wrapper #contactInput form {
+    text-align: center;
+  }
+  #contactSection .wrapper #contactInfo form textarea,
+  #contactSection .wrapper #contactInput form textarea {
+    width: 95%;
+  }
+  #contactSection .wrapper #contactInfo form div,
+  #contactSection .wrapper #contactInput form div {
+    justify-content: center;
+  }
 }
-@media (max-width: 480px) {
+@media (max-width: 762px) and (max-width: 480px) {
   #topHeader .wrapper {
     flex-direction: column;
   }
@@ -667,5 +755,14 @@ footer #copyright {
   }
   footer .footerBit {
     min-width: 100%;
+  }
+  #contactInput {
+    flex-direction: column;
+    align-items: center;
+  }
+  #contactInput input,
+  #contactInput textarea {
+    max-width: 90%;
+    min-width: 90%;
   }
 }
