@@ -344,6 +344,7 @@ header #bottomHeader li {
 }
 #plantOffer h1 {
   font-size: 7rem;
+  line-height: 6rem;
   text-transform: uppercase;
   margin: 20px 0 0 0;
 }
@@ -387,7 +388,7 @@ header #bottomHeader li {
 #iconBar .iconBox p {
   font-size: 1.25rem;
   margin: 0;
-  line-height: 0.75rem;
+  line-height: 1.25rem;
   padding: 0 0 5px 0;
 }
 
@@ -395,6 +396,7 @@ header #bottomHeader li {
 #ourProducts h5 {
   font-size: 3rem;
   margin: 20px;
+  text-transform: uppercase;
 }
 #ourProducts .wrapper {
   justify-content: center;
@@ -422,6 +424,7 @@ header #bottomHeader li {
 }
 #plantList .plantUnit {
   width: 25%;
+  padding: 10px;
 }
 #plantList .plantUnit .imageContainer {
   display: flex;
@@ -513,6 +516,7 @@ header #bottomHeader li {
   font-size: 3rem;
   margin: 20px;
   text-transform: uppercase;
+  text-align: center;
 }
 #posts #postsSubtitle {
   width: 30%;
@@ -521,7 +525,7 @@ header #bottomHeader li {
   text-align: center;
 }
 #posts article {
-  background-color: #dee2e6;
+  background-color: #f6f7fb;
   display: flex;
   flex-direction: column;
   padding: 25px;
@@ -597,4 +601,71 @@ footer #copyright {
   text-align: center;
   line-height: 0rem;
   padding: 0;
+}
+
+@media (max-width: 762px) {
+  #bottomHeader .wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #bottomHeader .wrapper object {
+    margin: 20px 0;
+  }
+  #bottomHeader .wrapper .imageContainer {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #iconBar .wrapper {
+    flex-direction: column;
+  }
+  .iconBox {
+    width: 75%;
+    margin: 20px 0;
+    justify-content: center;
+  }
+  .plantUnit {
+    min-width: 33%;
+  }
+  #articleWrapper {
+    flex-wrap: wrap;
+  }
+  article {
+    width: 45%;
+  }
+  footer .wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer .footerBit {
+    min-width: 50%;
+    align-items: center;
+    text-align: center;
+  }
+  footer .footerBit:nth-child(1) {
+    min-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  #topHeader .wrapper {
+    flex-direction: column;
+  }
+  .plantUnit {
+    min-width: 50%;
+  }
+  .collectionItem {
+    min-width: 100%;
+  }
+  #articleWrapper {
+    flex-direction: column;
+  }
+  article {
+    min-width: 100%;
+  }
+  footer .wrapper {
+    flex-direction: column;
+  }
+  footer .footerBit {
+    min-width: 100%;
+  }
 }
