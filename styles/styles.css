@@ -270,6 +270,11 @@ p {
   line-height: 3.6rem;
 }
 
+a {
+  color: #000;
+  text-decoration: none;
+}
+
 h1 {
   font-size: 7rem;
   line-height: 6rem;
