@@ -1,0 +1,74 @@
+/* Our Products Gallry */
+
+#ourProducts {
+
+    h5 {
+        font-size: 3rem;
+        margin: 20px;
+        text-transform: uppercase;
+    }
+
+    .wrapper {
+        justify-content: center;
+    }
+
+    #gallerySelectButtons {
+        button {
+            font-size: 1.25rem;
+            text-transform: none;
+            color: $colorThree;
+            background-color: $colorFive;
+            border: 2px solid $colorFour;
+            border-radius: 0px;
+            padding: 0 10px;
+            margin: 10px;
+
+        }
+
+        button:hover {
+            color: $colorOne;
+            border: 2px dotted $colorOne;
+        }
+    }
+}
+
+#plantList {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .plantUnit {
+        width: 25%;
+        padding: 10px;
+
+        .imageContainer {
+            display: flex;
+            justify-content: center;
+        }
+
+        .textContainer {
+
+            button {
+                border-radius: 0;
+                color: $colorFour;
+                background-color: $colorFive;
+                border: none;
+                box-shadow: 0px 12px 15px 0px rgba(0, 0, 0, 0.3);
+                margin: 5px 0 5px 10px;
+            }
+
+            button:hover {
+                color: $colorThree;
+
+            }
+
+            p {
+                line-height: 1rem;
+            }
+
+            .price {
+                color: $colorOne;
+            }
+        }
+    }
+}

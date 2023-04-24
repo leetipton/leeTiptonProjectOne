@@ -1,0 +1,68 @@
+/* Generic Use HTML */
+
+$colorOne: #abd373;
+$colorTwo: #4c4c4c;
+$colorThree: #000;
+$colorFour: #dee2e6;
+$colorFive: #fff;
+$colorSix: #f6f7fb;
+$colorSeven: #F8EEE5;
+
+html {
+    font-family: 'Rubik', sans-serif;
+    font-size: 62.5%;
+}
+
+body,
+p {
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+}
+
+a {
+    color: $colorThree;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 7rem;
+    line-height: 6rem;
+    text-transform: uppercase;
+    margin: 20px 0 0 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    color: $colorFive;
+    background-color: $colorOne;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-radius: 25px;
+}
+
+.wrapper {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+}
+
+.sectionRule {
+    color: $colorOne;
+    letter-spacing: -4px;
+    text-align: center;
+}

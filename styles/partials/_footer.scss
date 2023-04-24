@@ -1,0 +1,64 @@
+/* footer section */
+
+footer {
+
+    background-image: url(../assets/footer.jpg);
+    background-size: cover;
+    overflow: hidden;
+
+    .footerBit {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 20%;
+        padding: 15px;
+
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .footerHeader {
+            font-size: 2.0rem;
+            padding: 15px 0 0 0;
+        }
+
+        #phoneNumber {
+            font-size: 3rem;
+            margin: -20px 0 0 0;
+            padding: 0 0 10 0;
+
+        }
+
+        img {
+            margin: 0 0 15px 0;
+        }
+
+        button {
+            color: $colorThree;
+            background-color: transparent;
+            border: 1px solid $colorThree;
+            width: 35px;
+            height: 35px;
+            border-radius: 0;
+            padding: 0;
+            margin: 5px;
+
+            object {
+                height: 12px;
+                width: auto;
+                margin: 5px 0 0 0;
+            }
+
+        }
+
+    }
+
+    #copyright {
+        color: $colorOne;
+        text-align: center;
+        line-height: 0rem;
+        padding: 0;
+    }
+}

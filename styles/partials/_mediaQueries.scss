@@ -1,0 +1,134 @@
+//Media Queries//
+
+@media (max-width: 762px) {
+
+    #bottomHeader {
+
+        .wrapper {
+            flex-direction: column;
+            justify-content: center;
+
+            object {
+                margin: 20px 0;
+
+            }
+
+            .imageContainer {
+                min-width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    #iconBar .wrapper {
+        flex-direction: column;
+    }
+
+    .iconBox {
+        width: 75%;
+        margin: 20px 0;
+        justify-content: center;
+    }
+
+    .plantUnit {
+        min-width: 33%;
+    }
+
+    .collectionItem {
+        min-width: 100%;
+    }
+
+    #articleWrapper {
+        flex-wrap: wrap;
+    }
+
+    article {
+        width: 45%;
+    }
+
+    footer {
+        .wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .footerBit {
+            min-width: 50%;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footerBit:nth-child(1) {
+            min-width: 100%;
+        }
+    }
+
+    #contactSection .wrapper {
+        flex-direction: column;
+
+        #contactInfo,
+        #contactInput {
+            width: 100%;
+            background-size: cover;
+
+            form {
+                text-align: center;
+
+                textarea {
+                    width: 95%;
+                }
+
+                div {
+                    justify-content: center;
+                }
+
+            }
+        }
+
+    }
+
+
+    @media (max-width: 480px) {
+
+
+        #topHeader {
+            .wrapper {
+                flex-direction: column;
+            }
+        }
+
+        .plantUnit {
+            min-width: 50%;
+        }
+
+        #articleWrapper {
+            flex-direction: column;
+        }
+
+        article {
+            min-width: 100%;
+        }
+
+        footer {
+            .wrapper {
+                flex-direction: column;
+            }
+
+            .footerBit {
+                min-width: 100%;
+            }
+        }
+
+        #contactInput {
+            flex-direction: column;
+            align-items: center;
+
+            input,
+            textarea {
+                max-width: 90%;
+                min-width: 90%;
+            }
+        }
+    }
+}
