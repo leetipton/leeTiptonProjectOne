@@ -1,12 +1,5 @@
 /* Generic Use HTML */
-
-$colorOne: #abd373;
-$colorTwo: #4c4c4c;
-$colorThree: #000;
-$colorFour: #dee2e6;
-$colorFive: #fff;
-$colorSix: #f6f7fb;
-$colorSeven: #F8EEE5;
+@use './variables' as *;
 
 html {
     font-family: 'Rubik', sans-serif;

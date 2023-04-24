@@ -1,3 +1,4 @@
+/* Setup Code */
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -293,9 +294,8 @@ ul {
 }
 
 button {
-  color: #fff;
+  color: #ffffff;
   background-color: #abd373;
-  font: inherit;
   font-size: 1.5rem;
   text-transform: uppercase;
   border: none;
@@ -328,7 +328,7 @@ header .wrapper {
   align-items: center;
 }
 header #topHeader {
-  color: #fff;
+  color: #ffffff;
   background-color: #abd373;
 }
 header #topHeader p {
@@ -348,7 +348,7 @@ header #bottomHeader li {
   font-size: 1.25rem;
 }
 
-/* PLANT OFFER SECTION */
+/* Plant Offer Section */
 #plantOffer {
   background-color: #F8EEE5;
 }
@@ -368,7 +368,6 @@ header #bottomHeader li {
   padding: 0 0 0 50px;
 }
 
-/* THREE-ICON BAR */
 #iconBar {
   padding: 50px 0;
 }
@@ -400,7 +399,7 @@ header #bottomHeader li {
   padding: 0 0 5px 0;
 }
 
-/* Our Products title and buttons */
+/* Our Products Gallry */
 #ourProducts h5 {
   font-size: 3rem;
   margin: 20px;
@@ -413,7 +412,7 @@ header #bottomHeader li {
   font-size: 1.25rem;
   text-transform: none;
   color: #000;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 2px solid #dee2e6;
   border-radius: 0px;
   padding: 0 10px;
@@ -424,7 +423,6 @@ header #bottomHeader li {
   border: 2px dotted #abd373;
 }
 
-/* Gallery of Items for Sale */
 #plantList {
   flex-wrap: wrap;
   justify-content: center;
@@ -441,7 +439,7 @@ header #bottomHeader li {
 #plantList .plantUnit .textContainer button {
   border-radius: 0;
   color: #dee2e6;
-  background-color: #fff;
+  background-color: #ffffff;
   border: none;
   box-shadow: 0px 12px 15px 0px rgba(0, 0, 0, 0.3);
   margin: 5px 0 5px 10px;
@@ -456,7 +454,7 @@ header #bottomHeader li {
   color: #abd373;
 }
 
-/* plant collections section */
+/* Plant Collections Section */
 #collections {
   margin: 50px 0;
 }
@@ -484,7 +482,7 @@ header #bottomHeader li {
   padding: 0;
 }
 #collections .collectionItem button {
-  padding: 5px 20px;
+  padding: 10px 20px;
 }
 #collections #collectionItemOne {
   align-items: flex-start;
@@ -513,7 +511,7 @@ header #bottomHeader li {
   background-image: url(../assets/b4.jpeg);
 }
 
-/* section with articles */
+/* Articles Section */
 #posts {
   margin: 0 0 60px 0;
 }
@@ -559,7 +557,7 @@ header #bottomHeader li {
   margin-right: 0;
 }
 
-/* footer section */
+/* Footer Section */
 footer {
   background-image: url(../assets/footer.jpg);
   background-size: cover;
@@ -611,6 +609,7 @@ footer #copyright {
   padding: 0;
 }
 
+/* Contact Page */
 #contactTitle {
   background-image: url(../assets/contact-header.jpg);
   background-size: cover;
@@ -637,7 +636,7 @@ footer #copyright {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  color: #fff;
+  color: #ffffff;
   padding: 40px;
   width: 33%;
 }
@@ -676,6 +675,7 @@ footer #copyright {
   border-radius: 10px;
 }
 
+/* Media Queries */
 @media (max-width: 762px) {
   #bottomHeader .wrapper {
     flex-direction: column;
@@ -699,6 +699,9 @@ footer #copyright {
   }
   .plantUnit {
     min-width: 33%;
+  }
+  .collectionItem {
+    min-width: 100%;
   }
   #articleWrapper {
     flex-wrap: wrap;
@@ -745,9 +748,6 @@ footer #copyright {
   }
   .plantUnit {
     min-width: 50%;
-  }
-  .collectionItem {
-    min-width: 100%;
   }
   #articleWrapper {
     flex-direction: column;
